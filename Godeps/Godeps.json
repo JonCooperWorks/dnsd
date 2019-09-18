@@ -1,0 +1,56 @@
+{
+	"ImportPath": "github.com/dnsd",
+	"GoVersion": "go1.12",
+	"GodepVersion": "v80",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/miekg/dns",
+			"Comment": "v1.1.17",
+			"Rev": "2acbc9eff343291e671c1a9ba7be3201bf66dfd6"
+		},
+		{
+			"ImportPath": "github.com/mmikulicic/stringlist",
+			"Comment": "v1.0.1",
+			"Rev": "262d00d18943e0004730ac9dc1cb79b262d706fe"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/ed25519",
+			"Rev": "4def268fd1a49955bfb3dda92fe3db4f924f2285"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/ed25519/internal/edwards25519",
+			"Rev": "4def268fd1a49955bfb3dda92fe3db4f924f2285"
+		},
+		{
+			"ImportPath": "golang.org/x/net/bpf",
+			"Rev": "ca1201d0de80cfde86cb01aea620983605dfe99b"
+		},
+		{
+			"ImportPath": "golang.org/x/net/internal/iana",
+			"Rev": "ca1201d0de80cfde86cb01aea620983605dfe99b"
+		},
+		{
+			"ImportPath": "golang.org/x/net/internal/socket",
+			"Rev": "ca1201d0de80cfde86cb01aea620983605dfe99b"
+		},
+		{
+			"ImportPath": "golang.org/x/net/ipv4",
+			"Rev": "ca1201d0de80cfde86cb01aea620983605dfe99b"
+		},
+		{
+			"ImportPath": "golang.org/x/net/ipv6",
+			"Rev": "ca1201d0de80cfde86cb01aea620983605dfe99b"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "9eafafc0a87e0fd0aeeba439a4573537970c44c7"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/windows",
+			"Rev": "9eafafc0a87e0fd0aeeba439a4573537970c44c7"
+		}
+	]
+}
