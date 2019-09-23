@@ -24,7 +24,6 @@ var (
 
 var (
 	defaultZoneURLS = []string{
-		"https://xena.greedo.xeserv.us/files/akua.zone",
 		"https://xena.greedo.xeserv.us/files/adblock.zone",
 	}
 )
@@ -153,10 +152,10 @@ func main() {
 	log.Fatalf("Signal (%v) received, stopping\n", s)
 }
 
-func resolver(server, fqdn string, r_type uint16) []dns.RR {
+func resolver(server, fqdn string, rType uint16) []dns.RR {
 	m1 := new(dns.Msg)
 	m1.Id = dns.Id()
-	m1.SetQuestion(fqdn, r_type)
+	m1.SetQuestion(fqdn, rType)
 
 	in, err := dns.Exchange(m1, server)
 	if err == nil {
