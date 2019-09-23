@@ -47,24 +47,9 @@ variable `FORWARD_SERVER` or the command line flag `-forward-server`.
 ### Docker
 
 ```console
-$ export DNSD_VERSION=v1.0.3
 $ docker run --name dnsd -p 53:53/udp -dit --restart always xena/dnsd:v1.0.3 \
   dnsd -zone-url https://xena.greedo.xeserv.us/files/adblock.zone \
        -forward-server 1.1.1.1:53
-```
-
-### From Git with systemd
-
-```console
-$ go get -u -v github.com/Xe/x/cmd/dnsd@latest
-$ GOBIN=$(pwd) go install github.com/Xe/x/cmd/dnsd
-$ sudo cp dnsd /usr/local/bin/dnsd
-<edit dnsd.service as needed>
-$ sudo cp dnsd.service /etc/systemd/system/dnsd.service
-$ sudo systemctl daemon-reload
-$ sudo systemctl start dnsd
-$ sudo systemctl status dnsd
-$ sudo systemctl enable dnsd
 ```
 
 ## Testing
